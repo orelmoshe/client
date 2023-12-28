@@ -1,0 +1,80 @@
+const useStyles = makeStyles((theme) => ({
+	// rowActions: {},
+	button: {
+		backgroundColor: theme.palette.primary.main,
+		color: theme.palette.common.white,
+		// color: (props) => props.color,
+		// '& span': {},
+		// '&:first-child': {},
+		// '&:last-child': {},
+		// '&::before': {},
+		// '&::after': {},
+		// '&:hover::after': {},
+		// '&:hover > span': {},
+		// '&:nth-child(1)': {},
+		// '&:nth-child(2)': {},
+		// '& > svg': {},
+		// '& > th:first-child': {},
+		// '&:active, &:focus, &:hover,': {},
+		// '&$disabled': {},
+	    // '&:disabled': {},
+		// '&$error': {},
+		// '&$checked': {},
+		// '&:hover': {},
+		// '&[data-focus="true"]': {},
+		// '&[aria-selected="true"]': {},
+		// '& .MuiButton-root': {},
+		// '& h6': {},
+		// '&:focus-visible': {},
+		// '& $rowActions': {},
+	},
+}));
+
+---------------------------------------------------------
+
+https://levelup.gitconnected.com/reareact-hook-form-with-mui-examples-a3080b71ec45
+https://blog.logrocket.com/using-material-ui-with-react-hook-form/
+
+https://mui.com/material-ui/customization/palette/
+https://mui.com/system/getting-started/the-sx-prop/
+https://react-hook-form.com/get-started/#TypeScript
+https://www.npmjs.com/package/react-use-websocket
+
+---------------------------------------------------------
+
+import React from 'react';
+import Button from '@mui/material/Button';
+
+const useStyles = {
+  button: {
+    backgroundColor: 'error.light',
+    '&:hover': {},
+  },
+};
+
+interface Props {}
+
+const MaterialExample = (props: Props) => {
+  const {} = props;
+
+  return (
+    <Button variant="contained" sx={useStyles.button}>
+      ExampleButton
+    </Button>
+  );
+};
+
+export default MaterialExample;
+
+---------------------------------------------------------
+
+import React from 'react';
+import { styled } from '@mui/material/styles';
+
+const Container = styled('div')(() => ({}));
+
+const Example = () => {
+  return <Container>Dashboard</Container>;
+};
+
+export default Example;
